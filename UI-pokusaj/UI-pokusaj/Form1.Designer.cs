@@ -58,9 +58,9 @@ namespace UI_pokusaj
             this.panelMenu.Controls.Add(this.panelLogo);
             this.panelMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelMenu.Location = new System.Drawing.Point(0, 0);
-            this.panelMenu.Margin = new System.Windows.Forms.Padding(2);
+            this.panelMenu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelMenu.Name = "panelMenu";
-            this.panelMenu.Size = new System.Drawing.Size(196, 467);
+            this.panelMenu.Size = new System.Drawing.Size(261, 575);
             this.panelMenu.TabIndex = 0;
             // 
             // buttonZivotinje
@@ -71,11 +71,11 @@ namespace UI_pokusaj
             this.buttonZivotinje.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonZivotinje.Image = global::UI_pokusaj.Properties.Resources.streamline_icon_nature_ecology_cat_48x48;
             this.buttonZivotinje.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonZivotinje.Location = new System.Drawing.Point(0, 217);
-            this.buttonZivotinje.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonZivotinje.Location = new System.Drawing.Point(0, 266);
+            this.buttonZivotinje.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonZivotinje.Name = "buttonZivotinje";
-            this.buttonZivotinje.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            this.buttonZivotinje.Size = new System.Drawing.Size(196, 66);
+            this.buttonZivotinje.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.buttonZivotinje.Size = new System.Drawing.Size(261, 81);
             this.buttonZivotinje.TabIndex = 1;
             this.buttonZivotinje.Text = "     Istorija";
             this.buttonZivotinje.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -91,11 +91,11 @@ namespace UI_pokusaj
             this.buttonZakazi.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonZakazi.Image = global::UI_pokusaj.Properties.Resources.streamline_icon_phone_telephone_48x48;
             this.buttonZakazi.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonZakazi.Location = new System.Drawing.Point(0, 159);
-            this.buttonZakazi.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonZakazi.Location = new System.Drawing.Point(0, 195);
+            this.buttonZakazi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonZakazi.Name = "buttonZakazi";
-            this.buttonZakazi.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            this.buttonZakazi.Size = new System.Drawing.Size(196, 58);
+            this.buttonZakazi.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.buttonZakazi.Size = new System.Drawing.Size(261, 71);
             this.buttonZakazi.TabIndex = 4;
             this.buttonZakazi.Text = "     Zakažite pregled";
             this.buttonZakazi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -111,17 +111,17 @@ namespace UI_pokusaj
             this.buttonMedikament.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonMedikament.Image = global::UI_pokusaj.Properties.Resources.streamline_icon_ecology_science_erlenmeyer_flask_48x48;
             this.buttonMedikament.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonMedikament.Location = new System.Drawing.Point(0, 94);
-            this.buttonMedikament.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonMedikament.Location = new System.Drawing.Point(0, 115);
+            this.buttonMedikament.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonMedikament.Name = "buttonMedikament";
-            this.buttonMedikament.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            this.buttonMedikament.Size = new System.Drawing.Size(196, 65);
+            this.buttonMedikament.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.buttonMedikament.Size = new System.Drawing.Size(261, 80);
             this.buttonMedikament.TabIndex = 3;
             this.buttonMedikament.Text = "     Medikamenti";
             this.buttonMedikament.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonMedikament.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonMedikament.UseVisualStyleBackColor = true;
-            this.buttonMedikament.Click += new System.EventHandler(this.button2_Click);
+            this.buttonMedikament.Click += new System.EventHandler(this.buttonMedikament_Click);
             // 
             // buttonZdravlje
             // 
@@ -131,11 +131,11 @@ namespace UI_pokusaj
             this.buttonZdravlje.ForeColor = System.Drawing.Color.Gainsboro;
             this.buttonZdravlje.Image = global::UI_pokusaj.Properties.Resources.streamline_icon_health_medical_heart_rate_48x482;
             this.buttonZdravlje.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.buttonZdravlje.Location = new System.Drawing.Point(0, 32);
-            this.buttonZdravlje.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonZdravlje.Location = new System.Drawing.Point(0, 39);
+            this.buttonZdravlje.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonZdravlje.Name = "buttonZdravlje";
-            this.buttonZdravlje.Padding = new System.Windows.Forms.Padding(9, 0, 0, 0);
-            this.buttonZdravlje.Size = new System.Drawing.Size(196, 62);
+            this.buttonZdravlje.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.buttonZdravlje.Size = new System.Drawing.Size(261, 76);
             this.buttonZdravlje.TabIndex = 2;
             this.buttonZdravlje.Text = "     Zdravlje";
             this.buttonZdravlje.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -149,21 +149,19 @@ namespace UI_pokusaj
             this.panelLogo.Controls.Add(this.label1);
             this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Margin = new System.Windows.Forms.Padding(2);
+            this.panelLogo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(196, 32);
+            this.panelLogo.Size = new System.Drawing.Size(261, 39);
             this.panelLogo.TabIndex = 0;
-            this.panelLogo.Click += new System.EventHandler(this.panelLogo_Click);
             this.panelLogo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelLogo_MouseDown);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.CornflowerBlue;
-            this.label1.Location = new System.Drawing.Point(48, 8);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(64, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 15);
+            this.label1.Size = new System.Drawing.Size(86, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "VETERINAR";
             // 
@@ -175,10 +173,10 @@ namespace UI_pokusaj
             this.panelTitleBar.Controls.Add(this.buttonEXIT);
             this.panelTitleBar.Controls.Add(this.labelBar1);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(196, 0);
-            this.panelTitleBar.Margin = new System.Windows.Forms.Padding(2);
+            this.panelTitleBar.Location = new System.Drawing.Point(261, 0);
+            this.panelTitleBar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(601, 32);
+            this.panelTitleBar.Size = new System.Drawing.Size(802, 39);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -189,13 +187,13 @@ namespace UI_pokusaj
             this.buttonMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMinimize.ForeColor = System.Drawing.Color.SlateGray;
             this.buttonMinimize.Image = global::UI_pokusaj.Properties.Resources.streamline_icon_interface_remove_square_48x48;
-            this.buttonMinimize.Location = new System.Drawing.Point(517, 8);
-            this.buttonMinimize.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonMinimize.Location = new System.Drawing.Point(690, 10);
+            this.buttonMinimize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonMinimize.Name = "buttonMinimize";
-            this.buttonMinimize.Size = new System.Drawing.Size(20, 22);
+            this.buttonMinimize.Size = new System.Drawing.Size(27, 27);
             this.buttonMinimize.TabIndex = 7;
             this.buttonMinimize.UseVisualStyleBackColor = true;
-            this.buttonMinimize.Click += new System.EventHandler(this.button4_Click_1);
+            this.buttonMinimize.Click += new System.EventHandler(this.buttonMinimize_Click);
             // 
             // buttonMaximize
             // 
@@ -204,13 +202,13 @@ namespace UI_pokusaj
             this.buttonMaximize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonMaximize.ForeColor = System.Drawing.Color.SlateGray;
             this.buttonMaximize.Image = global::UI_pokusaj.Properties.Resources.streamline_icon_computer_keyboard_wire_less_48x48;
-            this.buttonMaximize.Location = new System.Drawing.Point(541, 7);
-            this.buttonMaximize.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonMaximize.Location = new System.Drawing.Point(722, 9);
+            this.buttonMaximize.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonMaximize.Name = "buttonMaximize";
-            this.buttonMaximize.Size = new System.Drawing.Size(20, 18);
+            this.buttonMaximize.Size = new System.Drawing.Size(27, 22);
             this.buttonMaximize.TabIndex = 6;
             this.buttonMaximize.UseVisualStyleBackColor = true;
-            this.buttonMaximize.Click += new System.EventHandler(this.button2_Click_1);
+            this.buttonMaximize.Click += new System.EventHandler(this.buttonMaximize_Click);
             // 
             // buttonEXIT
             // 
@@ -219,13 +217,13 @@ namespace UI_pokusaj
             this.buttonEXIT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonEXIT.ForeColor = System.Drawing.Color.SlateGray;
             this.buttonEXIT.Image = global::UI_pokusaj.Properties.Resources.streamline_icon_interface_delete_1_48x48;
-            this.buttonEXIT.Location = new System.Drawing.Point(565, 5);
-            this.buttonEXIT.Margin = new System.Windows.Forms.Padding(2);
+            this.buttonEXIT.Location = new System.Drawing.Point(754, 6);
+            this.buttonEXIT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonEXIT.Name = "buttonEXIT";
-            this.buttonEXIT.Size = new System.Drawing.Size(25, 23);
+            this.buttonEXIT.Size = new System.Drawing.Size(33, 28);
             this.buttonEXIT.TabIndex = 0;
             this.buttonEXIT.UseVisualStyleBackColor = true;
-            this.buttonEXIT.Click += new System.EventHandler(this.button1_Click);
+            this.buttonEXIT.Click += new System.EventHandler(this.buttonEXIT_Click);
             // 
             // labelBar1
             // 
@@ -233,8 +231,7 @@ namespace UI_pokusaj
             this.labelBar1.AutoSize = true;
             this.labelBar1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBar1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.labelBar1.Location = new System.Drawing.Point(273, 6);
-            this.labelBar1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelBar1.Location = new System.Drawing.Point(365, 7);
             this.labelBar1.Name = "labelBar1";
             this.labelBar1.Size = new System.Drawing.Size(28, 25);
             this.labelBar1.TabIndex = 5;
@@ -243,27 +240,26 @@ namespace UI_pokusaj
             // panelForma
             // 
             this.panelForma.BackColor = System.Drawing.Color.Aquamarine;
-            this.panelForma.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelForma.Cursor = System.Windows.Forms.Cursors.Default;
             this.panelForma.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelForma.Location = new System.Drawing.Point(196, 32);
-            this.panelForma.Margin = new System.Windows.Forms.Padding(2);
+            this.panelForma.Location = new System.Drawing.Point(261, 39);
+            this.panelForma.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelForma.Name = "panelForma";
-            this.panelForma.Size = new System.Drawing.Size(601, 435);
+            this.panelForma.Size = new System.Drawing.Size(802, 536);
             this.panelForma.TabIndex = 2;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(797, 467);
+            this.ClientSize = new System.Drawing.Size(1063, 575);
             this.Controls.Add(this.panelForma);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Veterinar";
             this.Load += new System.EventHandler(this.Form1_Load);

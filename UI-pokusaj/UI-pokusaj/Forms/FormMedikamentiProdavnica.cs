@@ -49,5 +49,10 @@ namespace UI_pokusaj.Forms
             }
             textBoxTrenutnaKolicina.Text = a.ToString();
         }
+
+        private void btnOtkaziKupovinu_Click(object sender, EventArgs e)
+        {
+            //ne upisuje nista u bazu
+        }
     }
 }

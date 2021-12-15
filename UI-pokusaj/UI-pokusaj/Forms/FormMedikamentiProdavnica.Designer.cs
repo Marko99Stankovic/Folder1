@@ -137,6 +137,7 @@ namespace UI_pokusaj.Forms
             this.textBoxCENA.Location = new System.Drawing.Point(348, 97);
             this.textBoxCENA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCENA.Name = "textBoxCENA";
+            this.textBoxCENA.ReadOnly = true;
             this.textBoxCENA.Size = new System.Drawing.Size(171, 22);
             this.textBoxCENA.TabIndex = 7;
             // 
@@ -290,11 +291,13 @@ namespace UI_pokusaj.Forms
             this.btnOtkaziKupovinu.TabIndex = 25;
             this.btnOtkaziKupovinu.Text = "Otkaži";
             this.btnOtkaziKupovinu.UseVisualStyleBackColor = true;
+            this.btnOtkaziKupovinu.Click += new System.EventHandler(this.btnOtkaziKupovinu_Click);
             // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.checkBoxPouzecem);
             this.groupBox1.Controls.Add(this.checkBoxOnlinePlacanje);
+            this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(20, 234);
             this.groupBox1.Name = "groupBox1";

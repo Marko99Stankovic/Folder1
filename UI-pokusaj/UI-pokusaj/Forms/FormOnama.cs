@@ -19,7 +19,12 @@ namespace UI_pokusaj.Forms
 
         
 
-        private void FormOnama_Load(object sender, EventArgs e)
+        private void FormIstorija_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

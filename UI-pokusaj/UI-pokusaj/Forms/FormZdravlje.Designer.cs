@@ -37,8 +37,7 @@ namespace UI_pokusaj.Forms
             // 
             this.labelZdravlje.AutoSize = true;
             this.labelZdravlje.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelZdravlje.Location = new System.Drawing.Point(58, 7);
-            this.labelZdravlje.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.labelZdravlje.Location = new System.Drawing.Point(77, 9);
             this.labelZdravlje.Name = "labelZdravlje";
             this.labelZdravlje.Size = new System.Drawing.Size(545, 25);
             this.labelZdravlje.TabIndex = 0;
@@ -47,23 +46,24 @@ namespace UI_pokusaj.Forms
             // 
             // richTextBox1
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(62, 39);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.richTextBox1.Location = new System.Drawing.Point(83, 48);
+            this.richTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(482, 301);
+            this.richTextBox1.ReadOnly = true;
+            this.richTextBox1.Size = new System.Drawing.Size(641, 370);
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
             // FormZdravlje
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aquamarine;
-            this.ClientSize = new System.Drawing.Size(623, 390);
+            this.ClientSize = new System.Drawing.Size(831, 480);
             this.Controls.Add(this.richTextBox1);
             this.Controls.Add(this.labelZdravlje);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormZdravlje";
             this.Text = "FormZdravlje";
             this.ResumeLayout(false);

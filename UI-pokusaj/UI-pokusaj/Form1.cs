@@ -40,13 +40,21 @@ namespace UI_pokusaj
 
         }
         //----------------------------------------------------------
-
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonZdravlje_Click(object sender, EventArgs e)
+        {
+            loadform(new Forms.FormZdravlje());
+            labelBar1.Text = "Zdravlje";
+        }
+        private void buttonMedikament_Click(object sender, EventArgs e)
         {
             loadform(new Forms.FormMedikamentiProdavnica());
             labelBar1.Text = "VetShop";
         }
-
+        private void buttonZakazi_Click(object sender, EventArgs e)
+        {
+            loadform(new Forms.FormKontaktZakazivanje());
+            labelBar1.Text = "Zakazivanje";
+        }
         private void buttonZivotinje_Click(object sender, EventArgs e)
         {
             loadform(new Forms.FormOnama());
@@ -54,56 +62,21 @@ namespace UI_pokusaj
             labelBar1.Text = "Istorija vaseg ljubimca";
             
         }
-
-        
-
-        private void buttonZdravlje_Click(object sender, EventArgs e)
-        {
-            loadform(new Forms.FormZdravlje());
-            labelBar1.Text = "Zdravlje";
-        }
+        //------------------------------------------------------------------------------
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void button4_Click(object sender, EventArgs e)
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-            Application.Exit();
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            if (WindowState == FormWindowState.Normal)
-                this.WindowState = FormWindowState.Maximized;
-            else
-                this.WindowState = FormWindowState.Normal;
 
         }
-
-        private void button4_Click_1(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
                 SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
-        {
-
-        }
-
         private void panelLogo_MouseDown(object sender, MouseEventArgs e)
         {
             
@@ -112,15 +85,21 @@ namespace UI_pokusaj
 
         }
 
-        private void buttonZakazi_Click(object sender, EventArgs e)
-        {
-            loadform(new Forms.FormKontaktZakazivanje());
-            labelBar1.Text = "Zakazivanje";
-        }
 
-        private void panelLogo_Click(object sender, EventArgs e)
+        private void buttonEXIT_Click(object sender, EventArgs e)
         {
-            
+            Application.Exit();
+        }
+        private void buttonMaximize_Click(object sender, EventArgs e)
+        {
+            if (WindowState == FormWindowState.Normal)
+                this.WindowState = FormWindowState.Maximized;
+            else
+                this.WindowState = FormWindowState.Normal;
+        }
+        private void buttonMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
         }
     }
 }
