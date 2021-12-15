@@ -17,29 +17,37 @@ namespace UI_pokusaj.Forms
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void FormMedikamentiProdavnica_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void FormMedikamentiProdavnica_Load_1(object sender, EventArgs e)
         {
 
         }
 
-        private void textBox5_TextChanged(object sender, EventArgs e)
+        private void buttonPoruci_Click(object sender, EventArgs e)
         {
+            //moguce je poruciti ako su sva polja popunjena!!! ! !  ! ! !  ! ! !  ! ! ! !  ! !
+            MessageBox.Show($"Porucen je {comboBoxProizvodi.Text}","Zavrsena kupovina", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
 
+        private void buttonPovecajKolicinu(object sender, EventArgs e)
+        {
+            int a = 0;
+            a = Int32.Parse(textBoxTrenutnaKolicina.Text);
+            a++;
+            textBoxTrenutnaKolicina.Text = a.ToString();
+            
+            
+        }
+
+        private void btnSmanjiKolicinu_Click(object sender, EventArgs e)
+        {
+            int a = 0;
+            a = Int32.Parse(textBoxTrenutnaKolicina.Text);
+            a--;
+            if (a <= 0)
+            {
+                a = 0;
+            }
+            textBoxTrenutnaKolicina.Text = a.ToString();
         }
     }
 }
