@@ -29,6 +29,7 @@ namespace UI_pokusaj.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxProizvodi = new System.Windows.Forms.ComboBox();
             this.textBoxTrenutnaKolicina = new System.Windows.Forms.TextBox();
@@ -53,7 +54,12 @@ namespace UI_pokusaj.Forms
             this.textBoxGrad = new System.Windows.Forms.TextBox();
             this.btnOtkaziKupovinu = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.bazaDataSet1 = new UI_pokusaj.BazaDataSet();
+            this.bindingSourceShop = new System.Windows.Forms.BindingSource(this.components);
+            this.shopTableAdapter = new UI_pokusaj.BazaDataSetTableAdapters.ShopTableAdapter();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceShop)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -68,16 +74,17 @@ namespace UI_pokusaj.Forms
             // 
             // comboBoxProizvodi
             // 
+            this.comboBoxProizvodi.DataSource = this.bindingSourceShop;
+            this.comboBoxProizvodi.DisplayMember = "Proizvod";
+            this.comboBoxProizvodi.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxProizvodi.FormattingEnabled = true;
-            this.comboBoxProizvodi.Items.AddRange(new object[] {
-            "Antibiotik",
-            "lek1",
-            "lek2"});
             this.comboBoxProizvodi.Location = new System.Drawing.Point(180, 21);
             this.comboBoxProizvodi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBoxProizvodi.Name = "comboBoxProizvodi";
             this.comboBoxProizvodi.Size = new System.Drawing.Size(395, 24);
             this.comboBoxProizvodi.TabIndex = 1;
+            this.comboBoxProizvodi.ValueMember = "ShopID";
+            this.comboBoxProizvodi.SelectedIndexChanged += new System.EventHandler(this.comboBoxProizvodi_SelectedIndexChanged);
             // 
             // textBoxTrenutnaKolicina
             // 
@@ -140,6 +147,7 @@ namespace UI_pokusaj.Forms
             this.textBoxCENA.ReadOnly = true;
             this.textBoxCENA.Size = new System.Drawing.Size(171, 22);
             this.textBoxCENA.TabIndex = 7;
+            this.textBoxCENA.TextChanged += new System.EventHandler(this.textBoxCENA_TextChanged);
             // 
             // label4
             // 
@@ -193,6 +201,7 @@ namespace UI_pokusaj.Forms
             this.checkBoxPouzecem.TabIndex = 14;
             this.checkBoxPouzecem.Text = "Pouzecem";
             this.checkBoxPouzecem.UseVisualStyleBackColor = true;
+            this.checkBoxPouzecem.CheckedChanged += new System.EventHandler(this.checkBoxPouzecem_CheckedChanged);
             // 
             // checkBoxOnlinePlacanje
             // 
@@ -204,6 +213,7 @@ namespace UI_pokusaj.Forms
             this.checkBoxOnlinePlacanje.TabIndex = 15;
             this.checkBoxOnlinePlacanje.Text = "Karticom";
             this.checkBoxOnlinePlacanje.UseVisualStyleBackColor = true;
+            this.checkBoxOnlinePlacanje.CheckedChanged += new System.EventHandler(this.checkBoxOnlinePlacanje_CheckedChanged);
             // 
             // label7
             // 
@@ -306,6 +316,20 @@ namespace UI_pokusaj.Forms
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Način plaćanja";
             // 
+            // bazaDataSet1
+            // 
+            this.bazaDataSet1.DataSetName = "BazaDataSet";
+            this.bazaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bindingSourceShop
+            // 
+            this.bindingSourceShop.DataMember = "Shop";
+            this.bindingSourceShop.DataSource = this.bazaDataSet1;
+            // 
+            // shopTableAdapter
+            // 
+            this.shopTableAdapter.ClearBeforeFill = true;
+            // 
             // FormMedikamentiProdavnica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -337,10 +361,12 @@ namespace UI_pokusaj.Forms
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormMedikamentiProdavnica";
-            this.Text = "FormMedikamentiProdavnica";
+            this.Text = " ";
             this.Load += new System.EventHandler(this.FormMedikamentiProdavnica_Load_1);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceShop)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -372,5 +398,8 @@ namespace UI_pokusaj.Forms
         private System.Windows.Forms.TextBox textBoxGrad;
         private System.Windows.Forms.Button btnOtkaziKupovinu;
         private System.Windows.Forms.GroupBox groupBox1;
+        private BazaDataSet bazaDataSet1;
+        private System.Windows.Forms.BindingSource bindingSourceShop;
+        private BazaDataSetTableAdapters.ShopTableAdapter shopTableAdapter;
     }
 }

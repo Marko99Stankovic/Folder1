@@ -17,14 +17,28 @@ namespace UI_pokusaj.Forms
             InitializeComponent();
         }
 
-        
-
-        private void FormIstorija_Load(object sender, EventArgs e)
+        private void FormOnama_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'bazaDataSet1.Ljubimac' table. You can move, or remove it, as needed.
+            this.ljubimacTableAdapter.Fill(this.bazaDataSet1.Ljubimac);
+            // TODO: This line of code loads data into the 'bazaDataSet1.Pregledi' table. You can move, or remove it, as needed.
+            this.preglediTableLjubimci.Fill(this.bazaDataSet1.Pregledi);
 
+            comboBox1_SelectedIndexChanged(comboBox1, null);
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            bindingSourceRazlog.Filter = string.Format("LjubimacID = {0}", comboBox1.SelectedValue ?? 0);
+                
+        }
+
+        private void listBoxISTORIJA_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void bindingSourceRazlog_CurrentChanged(object sender, EventArgs e)
         {
 
         }

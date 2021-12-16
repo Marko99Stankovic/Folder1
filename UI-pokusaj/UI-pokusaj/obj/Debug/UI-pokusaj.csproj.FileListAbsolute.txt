@@ -26,3 +26,4 @@ D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj
 D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI-pokusaj.csproj.CoreCompileInputs.cache
 D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI-pokusaj.exe
 D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI-pokusaj.pdb
+D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\bin\Debug\Baza.accdb

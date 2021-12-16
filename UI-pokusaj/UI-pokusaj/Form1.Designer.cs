@@ -42,7 +42,6 @@ namespace UI_pokusaj
             this.buttonEXIT = new System.Windows.Forms.Button();
             this.labelBar1 = new System.Windows.Forms.Label();
             this.panelForma = new System.Windows.Forms.Panel();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.panelMenu.SuspendLayout();
             this.panelLogo.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -258,10 +257,11 @@ namespace UI_pokusaj
             this.Controls.Add(this.panelForma);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.panelMenu);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form1";
             this.Text = "Veterinar";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
             this.panelMenu.ResumeLayout(false);
@@ -285,7 +285,6 @@ namespace UI_pokusaj
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panelForma;
         private System.Windows.Forms.Label labelBar1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button buttonEXIT;
         private System.Windows.Forms.Button buttonMaximize;
         private System.Windows.Forms.Button buttonMinimize;

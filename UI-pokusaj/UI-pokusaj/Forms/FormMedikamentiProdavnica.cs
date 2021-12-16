@@ -19,12 +19,14 @@ namespace UI_pokusaj.Forms
 
         private void FormMedikamentiProdavnica_Load_1(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'bazaDataSet1.Shop' table. You can move, or remove it, as needed.
+            this.shopTableAdapter.Fill(this.bazaDataSet1.Shop);
 
         }
 
         private void buttonPoruci_Click(object sender, EventArgs e)
         {
-            //moguce je poruciti ako su sva polja popunjena!!! ! !  ! ! !  ! ! !  ! ! ! !  ! !
+            if(comboBoxProizvodi.Text !="")
             MessageBox.Show($"Porucen je {comboBoxProizvodi.Text}","Zavrsena kupovina", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -53,6 +55,26 @@ namespace UI_pokusaj.Forms
         private void btnOtkaziKupovinu_Click(object sender, EventArgs e)
         {
             //ne upisuje nista u bazu
+        }
+
+        private void checkBoxPouzecem_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBoxOnlinePlacanje_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBoxCENA_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBoxProizvodi_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            bindingSourceShop.Filter = string.Format("Proizvod = {0}", comboBoxProizvodi.SelectedValue ?? 0);
         }
     }
 }

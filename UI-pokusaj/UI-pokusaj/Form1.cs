@@ -88,7 +88,7 @@ namespace UI_pokusaj
 
         private void buttonEXIT_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Close();
         }
         private void buttonMaximize_Click(object sender, EventArgs e)
         {
@@ -101,5 +101,16 @@ namespace UI_pokusaj
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            var res = MessageBox.Show("Da li ste sigurni?", this.Text, MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (res == DialogResult.No)
+            {
+                e.Cancel = true;    
+            }
+        }
+
+        
     }
 }

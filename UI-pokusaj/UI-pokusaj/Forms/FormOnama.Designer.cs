@@ -29,10 +29,19 @@ namespace UI_pokusaj.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.listBoxISTORIJA = new System.Windows.Forms.ListBox();
+            this.bazaDataSet1 = new UI_pokusaj.BazaDataSet();
+            this.bindingSourceLjubimci = new System.Windows.Forms.BindingSource(this.components);
+            this.preglediTableLjubimci = new UI_pokusaj.BazaDataSetTableAdapters.PreglediTableAdapter();
+            this.bindingSourceRazlog = new System.Windows.Forms.BindingSource(this.components);
+            this.ljubimacTableAdapter = new UI_pokusaj.BazaDataSetTableAdapters.LjubimacTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceLjubimci)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRazlog)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -47,12 +56,16 @@ namespace UI_pokusaj.Forms
             // 
             // comboBox1
             // 
+            this.comboBox1.DataSource = this.bindingSourceLjubimci;
+            this.comboBox1.DisplayMember = "Ime";
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(279, 80);
+            this.comboBox1.Location = new System.Drawing.Point(282, 80);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(392, 24);
             this.comboBox1.TabIndex = 2;
+            this.comboBox1.ValueMember = "LjubimacID";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label2
@@ -68,14 +81,42 @@ namespace UI_pokusaj.Forms
             // 
             // listBoxISTORIJA
             // 
+            this.listBoxISTORIJA.DataSource = this.bindingSourceRazlog;
+            this.listBoxISTORIJA.DisplayMember = "Razlog";
             this.listBoxISTORIJA.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listBoxISTORIJA.FormattingEnabled = true;
             this.listBoxISTORIJA.ItemHeight = 18;
-            this.listBoxISTORIJA.Location = new System.Drawing.Point(279, 146);
+            this.listBoxISTORIJA.Location = new System.Drawing.Point(279, 145);
             this.listBoxISTORIJA.Margin = new System.Windows.Forms.Padding(4);
             this.listBoxISTORIJA.Name = "listBoxISTORIJA";
             this.listBoxISTORIJA.Size = new System.Drawing.Size(392, 346);
             this.listBoxISTORIJA.TabIndex = 4;
+            this.listBoxISTORIJA.ValueMember = "LjubimacID";
+            this.listBoxISTORIJA.SelectedIndexChanged += new System.EventHandler(this.listBoxISTORIJA_SelectedIndexChanged);
+            // 
+            // bazaDataSet1
+            // 
+            this.bazaDataSet1.DataSetName = "BazaDataSet";
+            this.bazaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bindingSourceLjubimci
+            // 
+            this.bindingSourceLjubimci.DataMember = "Ljubimac";
+            this.bindingSourceLjubimci.DataSource = this.bazaDataSet1;
+            // 
+            // preglediTableLjubimci
+            // 
+            this.preglediTableLjubimci.ClearBeforeFill = true;
+            // 
+            // bindingSourceRazlog
+            // 
+            this.bindingSourceRazlog.DataMember = "Pregledi";
+            this.bindingSourceRazlog.DataSource = this.bazaDataSet1;
+            this.bindingSourceRazlog.CurrentChanged += new System.EventHandler(this.bindingSourceRazlog_CurrentChanged);
+            // 
+            // ljubimacTableAdapter
+            // 
+            this.ljubimacTableAdapter.ClearBeforeFill = true;
             // 
             // FormOnama
             // 
@@ -91,6 +132,10 @@ namespace UI_pokusaj.Forms
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormOnama";
             this.Text = "FormOnama";
+            this.Load += new System.EventHandler(this.FormOnama_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceLjubimci)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceRazlog)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,5 +146,10 @@ namespace UI_pokusaj.Forms
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.ListBox listBoxISTORIJA;
+        private BazaDataSet bazaDataSet1;
+        private System.Windows.Forms.BindingSource bindingSourceLjubimci;
+        private BazaDataSetTableAdapters.PreglediTableAdapter preglediTableLjubimci;
+        private System.Windows.Forms.BindingSource bindingSourceRazlog;
+        private BazaDataSetTableAdapters.LjubimacTableAdapter ljubimacTableAdapter;
     }
 }
