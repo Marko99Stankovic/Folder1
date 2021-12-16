@@ -74,7 +74,11 @@ namespace UI_pokusaj.Forms
 
         private void comboBoxProizvodi_SelectedIndexChanged(object sender, EventArgs e)
         {
-            bindingSourceShop.Filter = string.Format("Proizvod = {0}", comboBoxProizvodi.SelectedValue ?? 0);
+             bindingSourceCena.Filter = string.Format("Cena = {0}", comboBoxProizvodi.SelectedValue ?? 0);
+            
+            //za mnozenje sa kolicinom ce biti potrebne konverzije to int...ili nesto slicno
+            textBoxCENA.Text = "cena proizvoda" ;
+        
         }
     }
 }

@@ -57,9 +57,11 @@ namespace UI_pokusaj.Forms
             this.bazaDataSet1 = new UI_pokusaj.BazaDataSet();
             this.bindingSourceShop = new System.Windows.Forms.BindingSource(this.components);
             this.shopTableAdapter = new UI_pokusaj.BazaDataSetTableAdapters.ShopTableAdapter();
+            this.bindingSourceCena = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceShop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceCena)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -144,7 +146,6 @@ namespace UI_pokusaj.Forms
             this.textBoxCENA.Location = new System.Drawing.Point(348, 97);
             this.textBoxCENA.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBoxCENA.Name = "textBoxCENA";
-            this.textBoxCENA.ReadOnly = true;
             this.textBoxCENA.Size = new System.Drawing.Size(171, 22);
             this.textBoxCENA.TabIndex = 7;
             this.textBoxCENA.TextChanged += new System.EventHandler(this.textBoxCENA_TextChanged);
@@ -330,6 +331,11 @@ namespace UI_pokusaj.Forms
             // 
             this.shopTableAdapter.ClearBeforeFill = true;
             // 
+            // bindingSourceCena
+            // 
+            this.bindingSourceCena.DataMember = "Shop";
+            this.bindingSourceCena.DataSource = this.bazaDataSet1;
+            // 
             // FormMedikamentiProdavnica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -367,6 +373,7 @@ namespace UI_pokusaj.Forms
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceShop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceCena)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -401,5 +408,6 @@ namespace UI_pokusaj.Forms
         private BazaDataSet bazaDataSet1;
         private System.Windows.Forms.BindingSource bindingSourceShop;
         private BazaDataSetTableAdapters.ShopTableAdapter shopTableAdapter;
+        private System.Windows.Forms.BindingSource bindingSourceCena;
     }
 }

@@ -29,94 +29,89 @@ namespace UI_pokusaj.Forms
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.components = new System.ComponentModel.Container();
+            this.textBoxVlasnik = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxRazlogPregledaUnos = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonOtkaziPregled = new System.Windows.Forms.Button();
+            this.buttonZakazi = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBoxBrojTelefonaUnos = new System.Windows.Forms.TextBox();
+            this.bazaDataSet1 = new UI_pokusaj.BazaDataSet();
+            this.bindingSourceVlasnik = new System.Windows.Forms.BindingSource(this.components);
+            this.vlasnikTableAdapter = new UI_pokusaj.BazaDataSetTableAdapters.VlasnikTableAdapter();
+            this.bindingSourceZivotinja = new System.Windows.Forms.BindingSource(this.components);
+            this.ljubimacTableAdapter = new UI_pokusaj.BazaDataSetTableAdapters.LjubimacTableAdapter();
+            this.textBoxImeZivotinje = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.comboBoxIzborVeterinara = new System.Windows.Forms.ComboBox();
+            this.textBoxUnosVrsteZivotinje = new System.Windows.Forms.TextBox();
+            this.bindingSourceVeterinar = new System.Windows.Forms.BindingSource(this.components);
+            this.veterinarTableAdapter = new UI_pokusaj.BazaDataSetTableAdapters.VeterinarTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceVlasnik)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceZivotinja)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceVeterinar)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // textBoxVlasnik
             // 
-            this.textBox1.Location = new System.Drawing.Point(182, 91);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(244, 22);
-            this.textBox1.TabIndex = 0;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.textBoxVlasnik.Location = new System.Drawing.Point(182, 91);
+            this.textBoxVlasnik.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxVlasnik.Name = "textBoxVlasnik";
+            this.textBoxVlasnik.Size = new System.Drawing.Size(244, 22);
+            this.textBoxVlasnik.TabIndex = 0;
+            this.textBoxVlasnik.TextChanged += new System.EventHandler(this.textBoxVlasnik_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(494, 87);
+            this.label1.Location = new System.Drawing.Point(494, 89);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(70, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Vlasnik";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Macka",
-            "Pas"});
-            this.comboBox1.Location = new System.Drawing.Point(182, 132);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(244, 24);
-            this.comboBox1.TabIndex = 2;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(494, 127);
+            this.label2.Location = new System.Drawing.Point(494, 130);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 24);
             this.label2.TabIndex = 3;
             this.label2.Text = "Zivotinja";
             // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(182, 180);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(244, 22);
-            this.textBox2.TabIndex = 4;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(494, 175);
+            this.label3.Location = new System.Drawing.Point(494, 221);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(86, 24);
             this.label3.TabIndex = 5;
             this.label3.Text = "Veterinar";
             // 
-            // textBox3
+            // textBoxRazlogPregledaUnos
             // 
-            this.textBox3.Location = new System.Drawing.Point(182, 222);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(244, 22);
-            this.textBox3.TabIndex = 6;
+            this.textBoxRazlogPregledaUnos.Location = new System.Drawing.Point(182, 265);
+            this.textBoxRazlogPregledaUnos.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBoxRazlogPregledaUnos.Name = "textBoxRazlogPregledaUnos";
+            this.textBoxRazlogPregledaUnos.Size = new System.Drawing.Size(244, 22);
+            this.textBoxRazlogPregledaUnos.TabIndex = 6;
+            this.textBoxRazlogPregledaUnos.TextChanged += new System.EventHandler(this.textBoxRazlogPregledaUnos_TextChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(494, 217);
+            this.label4.Location = new System.Drawing.Point(494, 263);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 24);
             this.label4.TabIndex = 7;
@@ -124,7 +119,7 @@ namespace UI_pokusaj.Forms
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(183, 314);
+            this.dateTimePicker1.Location = new System.Drawing.Point(183, 357);
             this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(243, 22);
@@ -134,50 +129,124 @@ namespace UI_pokusaj.Forms
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(494, 313);
+            this.label5.Location = new System.Drawing.Point(494, 357);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(64, 24);
             this.label5.TabIndex = 9;
             this.label5.Text = "Datum";
             // 
-            // button1
+            // buttonOtkaziPregled
             // 
-            this.button1.Location = new System.Drawing.Point(182, 344);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(119, 43);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "Zakazi Pregled";
-            this.button1.UseVisualStyleBackColor = true;
+            this.buttonOtkaziPregled.Location = new System.Drawing.Point(182, 387);
+            this.buttonOtkaziPregled.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonOtkaziPregled.Name = "buttonOtkaziPregled";
+            this.buttonOtkaziPregled.Size = new System.Drawing.Size(119, 43);
+            this.buttonOtkaziPregled.TabIndex = 10;
+            this.buttonOtkaziPregled.Text = "Otkazi Pregled";
+            this.buttonOtkaziPregled.UseVisualStyleBackColor = true;
+            this.buttonOtkaziPregled.Click += new System.EventHandler(this.buttonOtkaziPregled_Click);
             // 
-            // button2
+            // buttonZakazi
             // 
-            this.button2.Location = new System.Drawing.Point(308, 344);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(119, 43);
-            this.button2.TabIndex = 11;
-            this.button2.Text = "Otkazi pregled";
-            this.button2.UseVisualStyleBackColor = true;
+            this.buttonZakazi.Location = new System.Drawing.Point(308, 387);
+            this.buttonZakazi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.buttonZakazi.Name = "buttonZakazi";
+            this.buttonZakazi.Size = new System.Drawing.Size(119, 43);
+            this.buttonZakazi.TabIndex = 11;
+            this.buttonZakazi.Text = "Zakazi pregled";
+            this.buttonZakazi.UseVisualStyleBackColor = true;
+            this.buttonZakazi.Click += new System.EventHandler(this.buttonZakazi_Click);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(494, 263);
+            this.label6.Location = new System.Drawing.Point(494, 308);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(114, 24);
             this.label6.TabIndex = 12;
             this.label6.Text = "Broj telefona";
             // 
-            // textBox4
+            // textBoxBrojTelefonaUnos
             // 
-            this.textBox4.Location = new System.Drawing.Point(182, 267);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(244, 22);
-            this.textBox4.TabIndex = 13;
+            this.textBoxBrojTelefonaUnos.Location = new System.Drawing.Point(182, 310);
+            this.textBoxBrojTelefonaUnos.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxBrojTelefonaUnos.Name = "textBoxBrojTelefonaUnos";
+            this.textBoxBrojTelefonaUnos.Size = new System.Drawing.Size(244, 22);
+            this.textBoxBrojTelefonaUnos.TabIndex = 13;
+            this.textBoxBrojTelefonaUnos.TextChanged += new System.EventHandler(this.textBoxBrojTelefonaUnos_TextChanged);
+            // 
+            // bazaDataSet1
+            // 
+            this.bazaDataSet1.DataSetName = "BazaDataSet";
+            this.bazaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bindingSourceVlasnik
+            // 
+            this.bindingSourceVlasnik.DataMember = "Vlasnik";
+            this.bindingSourceVlasnik.DataSource = this.bazaDataSet1;
+            // 
+            // vlasnikTableAdapter
+            // 
+            this.vlasnikTableAdapter.ClearBeforeFill = true;
+            // 
+            // bindingSourceZivotinja
+            // 
+            this.bindingSourceZivotinja.DataMember = "Ljubimac";
+            this.bindingSourceZivotinja.DataSource = this.bazaDataSet1;
+            this.bindingSourceZivotinja.CurrentChanged += new System.EventHandler(this.bindingSourceZivotinja_CurrentChanged);
+            // 
+            // ljubimacTableAdapter
+            // 
+            this.ljubimacTableAdapter.ClearBeforeFill = true;
+            // 
+            // textBoxImeZivotinje
+            // 
+            this.textBoxImeZivotinje.Location = new System.Drawing.Point(182, 180);
+            this.textBoxImeZivotinje.Name = "textBoxImeZivotinje";
+            this.textBoxImeZivotinje.Size = new System.Drawing.Size(244, 22);
+            this.textBoxImeZivotinje.TabIndex = 14;
+            this.textBoxImeZivotinje.TextChanged += new System.EventHandler(this.textBoxImeZivotinje_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(494, 178);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(113, 24);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Ime zivotinje";
+            // 
+            // comboBoxIzborVeterinara
+            // 
+            this.comboBoxIzborVeterinara.DataSource = this.bindingSourceVeterinar;
+            this.comboBoxIzborVeterinara.DisplayMember = "Ime";
+            this.comboBoxIzborVeterinara.FormattingEnabled = true;
+            this.comboBoxIzborVeterinara.Location = new System.Drawing.Point(183, 221);
+            this.comboBoxIzborVeterinara.Name = "comboBoxIzborVeterinara";
+            this.comboBoxIzborVeterinara.Size = new System.Drawing.Size(244, 24);
+            this.comboBoxIzborVeterinara.TabIndex = 16;
+            this.comboBoxIzborVeterinara.ValueMember = "VeterinarID";
+            this.comboBoxIzborVeterinara.SelectedIndexChanged += new System.EventHandler(this.comboBoxIzborVeterinara_SelectedIndexChanged);
+            // 
+            // textBoxUnosVrsteZivotinje
+            // 
+            this.textBoxUnosVrsteZivotinje.Location = new System.Drawing.Point(183, 131);
+            this.textBoxUnosVrsteZivotinje.Name = "textBoxUnosVrsteZivotinje";
+            this.textBoxUnosVrsteZivotinje.Size = new System.Drawing.Size(243, 22);
+            this.textBoxUnosVrsteZivotinje.TabIndex = 17;
+            this.textBoxUnosVrsteZivotinje.TextChanged += new System.EventHandler(this.textBoxUnosVrsteZivotinje_TextChanged);
+            // 
+            // bindingSourceVeterinar
+            // 
+            this.bindingSourceVeterinar.DataMember = "Veterinar";
+            this.bindingSourceVeterinar.DataSource = this.bazaDataSet1;
+            // 
+            // veterinarTableAdapter
+            // 
+            this.veterinarTableAdapter.ClearBeforeFill = true;
             // 
             // FormKontaktZakazivanje
             // 
@@ -185,23 +254,30 @@ namespace UI_pokusaj.Forms
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aquamarine;
             this.ClientSize = new System.Drawing.Size(1063, 608);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.textBoxUnosVrsteZivotinje);
+            this.Controls.Add(this.comboBoxIzborVeterinara);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.textBoxImeZivotinje);
+            this.Controls.Add(this.textBoxBrojTelefonaUnos);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonZakazi);
+            this.Controls.Add(this.buttonOtkaziPregled);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxRazlogPregledaUnos);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxVlasnik);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormKontaktZakazivanje";
+            this.Load += new System.EventHandler(this.FormKontaktZakazivanje_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceVlasnik)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceZivotinja)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceVeterinar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,19 +285,28 @@ namespace UI_pokusaj.Forms
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxVlasnik;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxRazlogPregledaUnos;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonOtkaziPregled;
+        private System.Windows.Forms.Button buttonZakazi;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBoxBrojTelefonaUnos;
+        private BazaDataSet bazaDataSet1;
+        private System.Windows.Forms.BindingSource bindingSourceVlasnik;
+        private BazaDataSetTableAdapters.VlasnikTableAdapter vlasnikTableAdapter;
+        private System.Windows.Forms.BindingSource bindingSourceZivotinja;
+        private BazaDataSetTableAdapters.LjubimacTableAdapter ljubimacTableAdapter;
+        private System.Windows.Forms.TextBox textBoxImeZivotinje;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBoxIzborVeterinara;
+        private System.Windows.Forms.TextBox textBoxUnosVrsteZivotinje;
+        private System.Windows.Forms.BindingSource bindingSourceVeterinar;
+        private BazaDataSetTableAdapters.VeterinarTableAdapter veterinarTableAdapter;
     }
 }
