@@ -16,12 +16,6 @@ namespace UI_pokusaj.Forms
         {
             InitializeComponent();
         }
-
-        private void comboBoxIzborZivotinje_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
-        }
-
         private void bindingSourceZivotinja_CurrentChanged(object sender, EventArgs e)
         {
 
@@ -66,26 +60,35 @@ namespace UI_pokusaj.Forms
 
         private void buttonZakazi_Click(object sender, EventArgs e)
         {
-            if(textBoxVlasnik.Text !="")
+            //za svako polje odraditi ovo                                       //dodati za ostala polja
+            if(textBoxVlasnik.Text !="" && textBoxBrojTelefonaUnos.Text != "" && textBoxPrezimeVlasnika.Text != "" && textBoxImeZivotinje.Text !="" )
             {
                 //pravljenje novog reda
                 var row = bazaDataSet1.Vlasnik.NewVlasnikRow();
                 //popunjavanje row-a
                 row.Ime = textBoxVlasnik.Text;
-                //ovde pokusati dodavanje zivotinje i ostalih stvari
+                row.Prezime = textBoxPrezimeVlasnika.Text;
+                row.Broj_telefona = textBoxBrojTelefonaUnos.Text;
 
+                //dodati ostala polja 
+
+
+
+
+
+
+
+                //-------------------------------------------------------------------------------------------------------------
                 //dodavanje u dataset
                 bazaDataSet1.Vlasnik.AddVlasnikRow(row);
-
                 //upis u bazu//azuriranje baze
                 vlasnikTableAdapter.Update(bazaDataSet1);
-
-                //da ocisti polje za unos vlasnika nakon unosa vlasnika
-                //textBoxVlasnik.Text = "";
+                //textBoxVlasnik.Text = ""; //ovo nam ne treba //da ocisti polje za unos vlasnika nakon unosa vlasnika
+                //-------------------------------------------------------------------------------------------------------------
             }
             else
             {
-                MessageBox.Show("Unesite vlasnika");
+                MessageBox.Show("Popunite sva polja");
             }
         }
 
