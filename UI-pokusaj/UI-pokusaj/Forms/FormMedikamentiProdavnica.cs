@@ -21,13 +21,15 @@ namespace UI_pokusaj.Forms
         {
             // TODO: This line of code loads data into the 'bazaDataSet1.Shop' table. You can move, or remove it, as needed.
             this.shopTableAdapter.Fill(this.bazaDataSet1.Shop);
-
+            comboBoxCena.Hide();
         }
 
         private void buttonPoruci_Click(object sender, EventArgs e)
         {
             if(comboBoxProizvodi.Text !="")
-            MessageBox.Show($"Porucen je {comboBoxProizvodi.Text}","Zavrsena kupovina", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show($"Poruceno je {textBoxTrenutnaKolicina.Text} proizvoda {comboBoxProizvodi.Text} ","Zavrsena kupovina", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        
+            //da se doda nova tabela koja ce da belezi porudzbine 
         }
 
         private void buttonPovecajKolicinu(object sender, EventArgs e)
@@ -36,8 +38,8 @@ namespace UI_pokusaj.Forms
             a = Int32.Parse(textBoxTrenutnaKolicina.Text);
             a++;
             textBoxTrenutnaKolicina.Text = a.ToString();
-            
-            
+            textBoxCENA.Text = bindingSourceCena.ToString(); //a.ToString();                 //ovo se treba mnoziti sa cenom
+
         }
 
         private void btnSmanjiKolicinu_Click(object sender, EventArgs e)
@@ -50,6 +52,7 @@ namespace UI_pokusaj.Forms
                 a = 0;
             }
             textBoxTrenutnaKolicina.Text = a.ToString();
+            textBoxCENA.Text = a.ToString();
         }
 
         private void btnOtkaziKupovinu_Click(object sender, EventArgs e)
@@ -69,16 +72,27 @@ namespace UI_pokusaj.Forms
 
         private void textBoxCENA_TextChanged(object sender, EventArgs e)
         {
-
+          
+          //  textBoxCENA.Text = comboBoxCena.Text;
+            int tmpcena = 0;
+            int tmpkol = 1;
+            tmpcena = Int32.Parse(comboBoxCena.Text);
+            tmpkol = Int32.Parse(textBoxTrenutnaKolicina.Text);
+            tmpcena = tmpcena * tmpkol;
+            textBoxCENA.Text = tmpcena.ToString();
         }
 
         private void comboBoxProizvodi_SelectedIndexChanged(object sender, EventArgs e)
         {
-             bindingSourceCena.Filter = string.Format("Cena = {0}", comboBoxProizvodi.SelectedValue ?? 0);
+            bindingSourceCena.Filter = string.Format("ShopID = {0}", comboBoxProizvodi.SelectedValue ?? 0);
+            textBoxTrenutnaKolicina.Text = "1"; //reset nakon promene proizvoda |ovo ovako pise da bi radilo dugme +- posto ovaj text prebacuje u int...
+            textBoxCENA.Text = comboBoxCena.Text;
             
-            //za mnozenje sa kolicinom ce biti potrebne konverzije to int...ili nesto slicno
-            textBoxCENA.Text = "cena proizvoda" ;
-        
+        }
+
+        private void comboBoxCena_SelectedIndexChanged(object sender, EventArgs e)
+        {
+           //postoji samo zbog preuzimanja cene
         }
     }
 }

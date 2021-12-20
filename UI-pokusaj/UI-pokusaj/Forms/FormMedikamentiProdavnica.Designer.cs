@@ -32,6 +32,8 @@ namespace UI_pokusaj.Forms
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.comboBoxProizvodi = new System.Windows.Forms.ComboBox();
+            this.bindingSourceShop = new System.Windows.Forms.BindingSource(this.components);
+            this.bazaDataSet1 = new UI_pokusaj.BazaDataSet();
             this.textBoxTrenutnaKolicina = new System.Windows.Forms.TextBox();
             this.btnSmanjiKolicinu = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -54,13 +56,12 @@ namespace UI_pokusaj.Forms
             this.textBoxGrad = new System.Windows.Forms.TextBox();
             this.btnOtkaziKupovinu = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.bazaDataSet1 = new UI_pokusaj.BazaDataSet();
-            this.bindingSourceShop = new System.Windows.Forms.BindingSource(this.components);
             this.shopTableAdapter = new UI_pokusaj.BazaDataSetTableAdapters.ShopTableAdapter();
             this.bindingSourceCena = new System.Windows.Forms.BindingSource(this.components);
-            this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet1)).BeginInit();
+            this.comboBoxCena = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceShop)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceCena)).BeginInit();
             this.SuspendLayout();
             // 
@@ -87,6 +88,16 @@ namespace UI_pokusaj.Forms
             this.comboBoxProizvodi.TabIndex = 1;
             this.comboBoxProizvodi.ValueMember = "ShopID";
             this.comboBoxProizvodi.SelectedIndexChanged += new System.EventHandler(this.comboBoxProizvodi_SelectedIndexChanged);
+            // 
+            // bindingSourceShop
+            // 
+            this.bindingSourceShop.DataMember = "Shop";
+            this.bindingSourceShop.DataSource = this.bazaDataSet1;
+            // 
+            // bazaDataSet1
+            // 
+            this.bazaDataSet1.DataSetName = "BazaDataSet";
+            this.bazaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBoxTrenutnaKolicina
             // 
@@ -317,16 +328,6 @@ namespace UI_pokusaj.Forms
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Način plaćanja";
             // 
-            // bazaDataSet1
-            // 
-            this.bazaDataSet1.DataSetName = "BazaDataSet";
-            this.bazaDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bindingSourceShop
-            // 
-            this.bindingSourceShop.DataMember = "Shop";
-            this.bindingSourceShop.DataSource = this.bazaDataSet1;
-            // 
             // shopTableAdapter
             // 
             this.shopTableAdapter.ClearBeforeFill = true;
@@ -336,12 +337,25 @@ namespace UI_pokusaj.Forms
             this.bindingSourceCena.DataMember = "Shop";
             this.bindingSourceCena.DataSource = this.bazaDataSet1;
             // 
+            // comboBoxCena
+            // 
+            this.comboBoxCena.DataSource = this.bindingSourceCena;
+            this.comboBoxCena.DisplayMember = "Cena";
+            this.comboBoxCena.FormattingEnabled = true;
+            this.comboBoxCena.Location = new System.Drawing.Point(661, 97);
+            this.comboBoxCena.Name = "comboBoxCena";
+            this.comboBoxCena.Size = new System.Drawing.Size(121, 24);
+            this.comboBoxCena.TabIndex = 27;
+            this.comboBoxCena.ValueMember = "ShopID";
+            this.comboBoxCena.SelectedIndexChanged += new System.EventHandler(this.comboBoxCena_SelectedIndexChanged);
+            // 
             // FormMedikamentiProdavnica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aquamarine;
             this.ClientSize = new System.Drawing.Size(872, 548);
+            this.Controls.Add(this.comboBoxCena);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnOtkaziKupovinu);
             this.Controls.Add(this.textBoxGrad);
@@ -369,10 +383,10 @@ namespace UI_pokusaj.Forms
             this.Name = "FormMedikamentiProdavnica";
             this.Text = " ";
             this.Load += new System.EventHandler(this.FormMedikamentiProdavnica_Load_1);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceShop)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.bazaDataSet1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSourceShop)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSourceCena)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -409,5 +423,6 @@ namespace UI_pokusaj.Forms
         private System.Windows.Forms.BindingSource bindingSourceShop;
         private BazaDataSetTableAdapters.ShopTableAdapter shopTableAdapter;
         private System.Windows.Forms.BindingSource bindingSourceCena;
+        private System.Windows.Forms.ComboBox comboBoxCena;
     }
 }

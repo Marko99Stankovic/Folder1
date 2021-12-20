@@ -36,7 +36,7 @@ namespace UI_pokusaj.Forms
         private void listBoxISTORIJA_SelectedIndexChanged(object sender, EventArgs e)
         {
            // bindingSourceLjubimci.Filter = string.Format("LjubimacID={0}", listBoxISTORIJA.SelectedValue ?? 0); //pravi bug|selekcijom el u listboxu ogranici pristup ljubimcima...
-        
+           // razmotri mogucnost da ovo bude personalizovano| ulogovani korisnik moze videti istoriju samo za svoje zovotinje!!!!!!!!!!!
         }
 
         private void bindingSourceRazlog_CurrentChanged(object sender, EventArgs e)
@@ -45,3 +45,4 @@ namespace UI_pokusaj.Forms
         }
     }
 }
+ 
