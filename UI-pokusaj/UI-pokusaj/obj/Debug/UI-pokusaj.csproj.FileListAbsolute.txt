@@ -1,0 +1,29 @@
+D:\ZA FAKS\Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\bin\Debug\UI-pokusaj.exe.config
+D:\ZA FAKS\Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\bin\Debug\UI-pokusaj.exe
+D:\ZA FAKS\Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\bin\Debug\UI-pokusaj.pdb
+D:\ZA FAKS\Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI-pokusaj.csproj.AssemblyReference.cache
+D:\ZA FAKS\Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI_pokusaj.Form1.resources
+D:\ZA FAKS\Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI_pokusaj.Properties.Resources.resources
+D:\ZA FAKS\Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI-pokusaj.csproj.GenerateResource.cache
+D:\ZA FAKS\Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI-pokusaj.csproj.CoreCompileInputs.cache
+D:\ZA FAKS\Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI-pokusaj.exe
+D:\ZA FAKS\Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI-pokusaj.pdb
+D:\ZA FAKS\Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI_pokusaj.Forms.FormOnama.resources
+D:\ZA FAKS\Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI_pokusaj.Forms.FormKontaktZakazivanje.resources
+D:\ZA FAKS\Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI_pokusaj.Forms.FormMedikamentiProdavnica.resources
+D:\ZA FAKS\Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI_pokusaj.Forms.FormZdravlje.resources
+D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\bin\Debug\UI-pokusaj.exe.config
+D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\bin\Debug\UI-pokusaj.exe
+D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\bin\Debug\UI-pokusaj.pdb
+D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI-pokusaj.csproj.AssemblyReference.cache
+D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI_pokusaj.Form1.resources
+D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI_pokusaj.Forms.FormKontaktZakazivanje.resources
+D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI_pokusaj.Forms.FormMedikamentiProdavnica.resources
+D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI_pokusaj.Forms.FormOnama.resources
+D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI_pokusaj.Forms.FormZdravlje.resources
+D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI_pokusaj.Properties.Resources.resources
+D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI-pokusaj.csproj.GenerateResource.cache
+D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI-pokusaj.csproj.CoreCompileInputs.cache
+D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI-pokusaj.exe
+D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\obj\Debug\UI-pokusaj.pdb
+D:\ZA FAKS\PIRS Projektovanje i Razvoj Softvera\PIRS-VEZBE\UI-pokusaj\UI-pokusaj\bin\Debug\Baza.accdb
